@@ -1,8 +1,8 @@
 # Jaguar Creative Theme
 
-(/fragments_and_images/jaguar-creative-top.png)
+![Top of page](/fragments_and_images/jaguar-creative-top.png)
 
-(/fragments_and_images/jaguar-creative-bottom.png)
+![Bottom of page](/fragments_and_images/jaguar-creative-bottom.png)
 
 Jaguar Creative Theme is a Liferay 7.1 / 7.2 theme based in the great bootstrap theme called [Creative](https://github.com/BlackrockDigital/startbootstrap-creative) created by [Start Bootstrap](http://startbootstrap.com/). under the MIT license.
 
