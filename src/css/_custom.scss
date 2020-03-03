@@ -1,0 +1,97 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+@import "vendor/creative/variables";
+@import "vendor/creative/mixins";
+@import "vendor/creative/global";
+
+@import "vendor/creative/navbar";
+@import "vendor/creative/masthead";
+@import "vendor/creative/services";
+@import "vendor/creative/portfolio";
+
+@import "vendor/magnific-popup";
+@import "vendor/fontawesome-free/css/all.css";
+
+#wrapper {
+    @import "vendor/creative/bootstrap-overrides";
+}
+
+// some fixed to adapt the theme to lifeary portal
+@import "liferay_fixes";
+
+// Breadcrumbs stuff
+
+.container-fluid-wide {
+	background: url(../images/stars.jpg) repeat;
+}
+
+.breadcrumb-container{
+    display: inline-block;
+    width: 100%;
+    background: $breadcrumb-bg;
+    border-bottom: $breadcrumb-border-bottom;
+    border-top: $breadcrumb-border-top;
+    background-image: linear-gradient(to right, $breadcrumb-bg-aux, $breadcrumb-bg,  $breadcrumb-bg,  $breadcrumb-bg, $breadcrumb-bg-aux);
+    h1{
+	    margin: 0 .75em;
+	    color: white;
+	    width: auto;
+	    display: inline-block;
+	    border-bottom: solid 4px #0088cc;
+	    padding-bottom: 0.25em;
+	    position: relative;
+	    line-height: 1.25em;
+	    margin-bottom: -.15em;
+	}
+}
+
+.breadcrumb {
+    padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+    margin-bottom: 0;
+	float: right;
+	background-color:transparent;
+	li {
+		 & + li:before {
+		    float: left;
+		    padding-left: 0em;
+		    padding-right: 0em;
+		    color: white;
+		    font-size: 1em;
+		    font-family: $font-family-sans-serif;
+		}
+		a{
+			color: $brand-primary;
+			font-weight: bold;
+			font-size: 1.3em;
+			&::last{
+				color: $brand-primary;
+			}
+		}
+	}
+}
+
+.breadcrumb li {
+	font-weight: bold;
+	font-size: 1.0em;
+	color: #ffffff;
+}
+
+.active.breadcrumb-text-truncate {
+	margin-top: 4px;
+}
+
+.drop-question {
+	padding: 10px;
+	border: $brand-primary 1px solid;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.drop-answer {
+	padding: 10px;
+}
